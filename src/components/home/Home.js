@@ -10,7 +10,8 @@ const Home = () => {
                     <li>
                         <h2>FAQ page</h2>
                         <div className='app-description'>
-                            <p>Using the accordion approach for creating a FAQ page</p>
+                            <p>Using the accordion approach</p>
+                            <p>The questions are local</p>
                         </div>
                     </li>
                 </ul>
