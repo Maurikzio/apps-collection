@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -35,4 +36,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.inner-container {
+  /* background-color: yellow; */
+  display: flex;
+  height: 100%;
+}
+.sidebar {
+  width: 250px;
+  /* background-color: #eee; */
+}
+.sidebar a {
+
+  text-decoration: none;
+}
+.content {
+  width: 100%;
+  padding: 20px;
+  background-color: #eee
 }
