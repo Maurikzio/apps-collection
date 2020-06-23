@@ -11,7 +11,7 @@ const App2 = () =>{
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     exact: true,
     name: "Home",
     component: <Home/>

@@ -12,15 +12,33 @@
 }
 
 .apps-container{
-  
+    /* background-color: orange; */
+    display: flex;
 }
-.apps-container ul{
-    padding: 0px;
-    list-style: none;
-}
-.apps-container li{
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
+.app {
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.app a{
+    text-decoration: none;
+    /* background-color: orange; */
+    align-self: flex-start;
+}
+.app a:hover{
+    text-decoration: underline;
+}
+.app h2 {
+    margin-bottom: 10px;
+    /* color: blue; */
+}
+
+.app ul{
+    padding-left: 15px;
+    /* list-style: none; */
+    /* background-color: green; */
 }
