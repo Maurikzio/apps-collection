@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import './App.css';
-import Accordion from './components/accordion/Accordion';
 import Home from './components/home/Home';
+import FAQ from './components/faq/FAQ';
 
 const App2 = () =>{
   return <h2>App2</h2>
@@ -18,8 +18,8 @@ const routes = [
   },
   {
     path: "/accordion",
-    name: "Accordion static data",
-    component: <Accordion/>
+    name: "FAQ page",
+    component: <FAQ/>
   },
   {
     path: "/app2",
