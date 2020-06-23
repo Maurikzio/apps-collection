@@ -1,8 +1,6 @@
 .App {
-  /* text-align: center; */
   height: 100%;
 }
-
 
 .inner-container {
   /* background-color: yellow; */
@@ -12,13 +10,25 @@
 .sidebar {
   width: 250px;
   /* background-color: #eee; */
+  text-align: center;
+  padding-top: 25px;
+
 }
 .sidebar a {
-
   text-decoration: none;
 }
+.sidebar a:hover{
+  text-decoration: underline;
+}
+
+
+.sidebar li {
+  margin-top: 10px;
+}
+
 .content {
   width: 100%;
   padding: 20px;
-  background-color: #eee
+  /* padding-bottom: 0px; */
+  background-color: #eee;
 }

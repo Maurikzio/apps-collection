@@ -32,8 +32,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <div className='inner-container'>
+        <div className='inner-container'>
           <section className="sidebar">
+            <h1>My Apps 💪</h1>
             <ul>
               {
                 routes.map((route, index) => (
