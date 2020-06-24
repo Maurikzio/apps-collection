@@ -9,7 +9,7 @@ const Home = () => {
             <div className='apps-container'>
 
                 <div className='app'>
-                    <Link to='/accordion'>
+                    <Link to='/apps-collection/accordion'>
                         <h2>FAQ page</h2>
                     </Link>
                     <ul>

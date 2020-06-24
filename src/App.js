@@ -4,27 +4,26 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './App.css';
 import Home from './components/home/Home';
 import FAQ from './components/faq/FAQ';
+import Todo from './components/basicTodo/Todo';
 
-const App2 = () =>{
-  return <h2>App2</h2>
-}
+
 
 const routes = [
   {
-    path: "/home",
+    path: "/apps-collection",
     exact: true,
     name: "Home",
     component: <Home/>
   },
   {
-    path: "/accordion",
+    path: "/apps-collection/accordion",
     name: "FAQ page",
     component: <FAQ/>
   },
   {
-    path: "/app2",
-    name: "App 2",
-    component: <App2/>
+    path: "/apps-collection/basic-todo",
+    name: "Basic Todo",
+    component: <Todo/>
   }
 ]
 
