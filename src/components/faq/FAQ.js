@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Question from './Question.js';
 import './faq-styles.css';
+import Tags from './Tags.js';
 
 const questions = [
     {
@@ -57,6 +58,24 @@ const questions = [
         answer: "Web crawlers use alt tags to understand image content, so they are considered important for Search Engine Optimization (SEO).",
         tags: ['html'],
         open: false   
+    },
+    {
+        question: 'What is the difference between HTML and React event handling?',
+        answer: "HTML uses lowercase, React uses camelCase.",
+        tags: ['react', 'html'],
+        open: false   
+    },
+    {
+        question: 'Can you name the four types of @media properties?',
+        answer: "All, Print, Screen, Speech",
+        tags: ['css'],
+        open: false   
+    },
+    {
+        question: 'What is the difference between em and rem units?',
+        answer: 'em units inherit their value from the font-size of the parent element; rem units inherit their value from the font-size of the root element (html)',
+        tags: ['css'],
+        open: false   
     }
 ]
 
@@ -74,7 +93,7 @@ const FAQ = () => {
 
     const toggleQuestion = index => {
         setFaqs(
-            faqs.map((faq, i) => {
+            filteredQs.map((faq, i) => {
                 if(i === index){
                     faq.open = !faq.open
                 }else{
@@ -102,6 +121,9 @@ const FAQ = () => {
         )
     }, [wantedQ, faqs])
 
+
+    const tagsList = [...new Set(filteredQs.map(faq => [...faq.tags]).flat())];
+
     return (
         <div className='faq-page-container'>
             <header>the best faq page ever!</header>
@@ -116,6 +138,9 @@ const FAQ = () => {
                     autoFocus={true}
                 />
             </div>
+            
+            <Tags list={tagsList} qs={filteredQs} setQs={setFilteredQs}/>
+
             <div className='faqs'>
                 
                 {/* 1st approach
