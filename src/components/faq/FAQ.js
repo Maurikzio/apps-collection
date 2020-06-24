@@ -38,7 +38,7 @@ const questions = [
     {
         question: 'QA vs Developer',
         answer: "Two people from different planets working together to deliver a quality product.",
-        tags: ['funny', 'developer'],
+        tags: ['developer'],
         open: false
     },
     {
@@ -62,7 +62,7 @@ const questions = [
     {
         question: 'What is the difference between HTML and React event handling?',
         answer: "HTML uses lowercase, React uses camelCase.",
-        tags: ['react', 'html'],
+        tags: ['html'],
         open: false   
     },
     {
@@ -87,9 +87,9 @@ const FAQ = () => {
     const [ wantedQ, setWantedQ ] = useState('');
     const [ filteredQs, setFilteredQs ] = useState([])
 
-    useEffect(() => {
+    useEffect(() => { 
         setFaqs(questions)
-    }, [faqs])
+    }, [wantedQ])
 
     const toggleQuestion = index => {
         setFaqs(
@@ -119,8 +119,7 @@ const FAQ = () => {
         setFilteredQs(
             faqs.filter(faq => faq.question.toLocaleLowerCase().includes(wantedQ.toLocaleLowerCase()))
         )
-    }, [wantedQ, faqs])
-
+    }, [faqs, wantedQ])
 
     const tagsList = [...new Set(filteredQs.map(faq => [...faq.tags]).flat())];
 
