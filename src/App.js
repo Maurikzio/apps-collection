@@ -6,22 +6,20 @@ import Home from './components/home/Home';
 import FAQ from './components/faq/FAQ';
 import Todo from './components/basicTodo/Todo';
 
-
-
 const routes = [
   {
-    path: "/apps-collection",
+    path: "/",
     exact: true,
     name: "Home",
     component: <Home/>
   },
   {
-    path: "/apps-collection/accordion",
+    path: "/accordion",
     name: "FAQ page",
     component: <FAQ/>
   },
   {
-    path: "/apps-collection/basic-todo",
+    path: "/basic-todo",
     name: "Basic Todo",
     component: <Todo/>
   }

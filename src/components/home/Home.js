@@ -9,7 +9,7 @@ const Home = () => {
             <div className='apps-container'>
 
                 <div className='app'>
-                    <Link to='/apps-collection/accordion'>
+                    <Link to='/accordion'>
                         <h2>FAQ page</h2>
                     </Link>
                     <ul>
@@ -19,10 +19,12 @@ const Home = () => {
                 </div>
 
                 <div className='app'>
-                    <h2>APP 2</h2>
+                    <Link to='/basic-todo'>
+                        <h2>Basic Todo</h2>
+                    </Link>
                     <ul>
-                        <li>Lorem impsum hety yur sec</li>
-                        <li>abc defg hijk lmnops</li>
+                        <li>Functional Components</li>
+                        <li>Add, Remove and Mark a TASK as completed </li>
                     </ul>
                 </div>
 

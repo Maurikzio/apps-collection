@@ -3,17 +3,21 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
 }
 
 .home-container h1{
     /* background-color: red; */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .apps-container{
     /* background-color: orange; */
     display: flex;
+    justify-content: space-around;
 }
 .app {
     padding: 10px;
@@ -23,6 +27,7 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 .app a{
     text-decoration: none;
