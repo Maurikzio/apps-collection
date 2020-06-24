@@ -7,38 +7,56 @@ const questions = [
     {
         question: "how many programmers does it take to screw in a ligthbulb?",
         answer: "None, we don't adress hardware issues. 🤪",
-        tag: 'funny',
+        tags: ['funny'],
         open: true
     },
     {
         question: "Who is the most awesome person?",
         answer: "You, 🙃",
+        tags: ['funny'],
         open: false
     },
     {
         question:"How many questions does it take to make a successful FAQ page?",
         answer: "Thiiiiiiiis many. 📈",
+        tags: ['funny'],
         open: false
     },
     {
         question: 'What\'s a Programmer?',
         answer: "An organism that turns caffeine and pizza into software.",
+        tags: ['funny'],
         open: false
     },
     {
         question: 'What\'s an Algorithm?',
         answer: "Word used by a programmer when they do not want to explain what they did.",
+        tags: ['funny'],
         open: false
     },
     {
         question: 'QA vs Developer',
         answer: "Two people from different planets working together to deliver a quality product.",
+        tags: ['funny', 'developer'],
         open: false
     },
     {
         question: 'What is the difference between an element and a component in React?',
         answer: "An element is a plain JavaScript object that represents a DOM node or component. Components can be either classes or functions, that take props as an input and return an element tree as the output.",
+        tags: ['react'],
         open: false
+    },
+    {
+        question: 'In which states can a Promise be?',
+        answer: "pending, fulfilled, rejected",
+        tags: ['js'],
+        open: false   
+    },
+    {
+        question: 'What is the purpose of the alt attribute on images?',
+        answer: "Web crawlers use alt tags to understand image content, so they are considered important for Search Engine Optimization (SEO).",
+        tags: ['html'],
+        open: false   
     }
 ]
 

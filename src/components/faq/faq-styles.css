@@ -61,6 +61,15 @@
     font-size: 30px;
     padding-right: 80px;
     transition: all 0.4s ease;
+    /* background-color: orange; */
+    /* display: flex; */
+}
+.faqs .faq .faq-question i{
+    font-size: 10px;
+    margin-right: 3px;
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 5px;
 }
 .faqs .faq-question span {
     position: absolute;
