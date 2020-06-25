@@ -189,14 +189,14 @@ const questions = [
 // export default FAQ;
 
 const FAQ = () => {
-    const [ faqs, setFaqs] = useState(questions);
+    const [ faqs, setFaqs] = useState([]);
     const [ wantedQ, setWantedQ ] = useState('');
 
     
     useEffect(() => {
-        if(wantedQ.length === 0){
+        // if(wantedQ.length === 0){
             setFaqs(questions)
-        }
+        // }
     },[wantedQ])
     
     const toggleQuestion = id => {
