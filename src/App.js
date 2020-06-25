@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/home/Home';
 import FAQ from './components/faq/FAQ';
 import Todo from './components/basicTodo/Todo';
+import Timer from './components/pomodoroTimer/Timer';
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     path: "/basic-todo",
     name: "Basic Todo",
     component: <Todo/>
+  },
+  {
+    path: "/pomodoro-timer",
+    name: "Pomodoro Timer",
+    component: <Timer/>
   }
 ]
 

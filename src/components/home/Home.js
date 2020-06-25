@@ -28,6 +28,15 @@ const Home = () => {
                     </ul>
                 </div>
 
+                <div className='app'>
+                    <Link to='/pomodoro-timer'>
+                        <h2>Pomodoro Timer</h2>
+                    </Link>
+                    <ul>
+                        <li>Implementing constructor and componentDidMount</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     )
