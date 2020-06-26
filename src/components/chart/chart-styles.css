@@ -1,0 +1,30 @@
+p {
+    text-align: center;
+}
+button {
+    background: #159fff;
+    border: none;
+    color: white;
+    margin-left: 1em;
+    padding: 0.5em 2em;
+    text-transform: uppercase;
+}
+button:hover{
+    cursor: pointer;
+    background: darken(#159fff, 50%);
+}
+
+#chart{
+    background: #fff;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-bottom: 4px solid #159fff;
+}

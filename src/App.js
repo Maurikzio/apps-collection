@@ -6,28 +6,34 @@ import Home from './components/home/Home';
 import FAQ from './components/faq/FAQ';
 import Todo from './components/basicTodo/Todo';
 import Timer from './components/pomodoroTimer/Timer';
+import Main from './components/chart/Main';
 
 const routes = [
   {
-    path: "/",
+    path: "/apps-collection",
     exact: true,
     name: "Home",
     component: <Home/>
   },
   {
-    path: "/accordion",
+    path: "/apps-collection/accordion",
     name: "FAQ page",
     component: <FAQ/>
   },
   {
-    path: "/basic-todo",
+    path: "/apps-collection/basic-todo",
     name: "Basic Todo",
     component: <Todo/>
   },
   {
-    path: "/pomodoro-timer",
+    path: "/apps-collection/pomodoro-timer",
     name: "Pomodoro Timer",
     component: <Timer/>
+  },
+  {
+    path: "/apps-collection/chart",
+    name: "Basic Chart",
+    component: <Main/>
   }
 ]
 
@@ -37,7 +43,7 @@ function App() {
       <Router>
         <div className='inner-container'>
           <section className="sidebar">
-            <h1>My Apps 💪</h1>
+            <h1>Apps 💪</h1>
             <ul>
               {
                 routes.map((route, index) => (
