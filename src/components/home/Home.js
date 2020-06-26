@@ -48,6 +48,16 @@ const Home = () => {
                     </ul>
                 </div>
 
+                <div className='app'>
+                    <Link to='/apps-collection/sum-all'>
+                        <h2>Sum of All Numbers</h2>
+                    </Link>
+                    <ul>
+                        <li>Pure Components</li>
+                        <li>Sum of entered numbers</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     )

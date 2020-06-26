@@ -7,6 +7,7 @@ import FAQ from './components/faq/FAQ';
 import Todo from './components/basicTodo/Todo';
 import Timer from './components/pomodoroTimer/Timer';
 import Main from './components/chart/Main';
+import SumAll from './components/sumAllNumbers/SumAll';
 
 const routes = [
   {
@@ -34,6 +35,11 @@ const routes = [
     path: "/apps-collection/chart",
     name: "Basic Chart",
     component: <Main/>
+  },
+  {
+    path: "/apps-collection/sum-all",
+    name: "Sum all Numbers",
+    component: <SumAll/>
   }
 ]
 

@@ -10,7 +10,7 @@ class Chart extends Component {
 
     //
     componentDidUpdate(){
-        //when we receive a new prop then we update the chart again
+        //when we receive a new prop o the prop changes then we update the chart again
         this.updateChart();
     }
 
