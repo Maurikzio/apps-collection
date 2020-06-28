@@ -19,7 +19,7 @@ const useBookSearch = (query, pageNumber) => {
             method: 'GET',
             url: 'http://openlibrary.org/search.json',
             params: { q: query, page: pageNumber },
-            cancelToken: new axios.CancelToken((c) => cancel = c) //to cancel while we write into the input
+            cancelToken: new axios.CancelToken((c) => cancel = c), //to cancel while we write into the input
         }).then(res => {
             // console.log(res.data.docs)
             setBooks(prevBooks => { //to dont overwrite the book list but to use the previous books too
