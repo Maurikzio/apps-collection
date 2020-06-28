@@ -1,0 +1,33 @@
+.books-finder-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.book{
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+input {
+    width: 400px;
+    margin: 15px auto;
+    font-size: 25px;
+    font-weight: 300;
+    border: none;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+}
+
+header {
+    border-bottom-color: salmon;
+}
+
+.loading-container{
+    display: flex;
+    justify-content: center;
+}

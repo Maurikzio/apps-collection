@@ -9,6 +9,7 @@ import Timer from './components/pomodoroTimer/Timer';
 import Main from './components/chart/Main';
 import SumAll from './components/sumAllNumbers/SumAll';
 import Pagination from './components/pagination/Pagination';
+import InfiniteScrolling from './components/infiniteScrolling/InfiniteScrolling';
 
 const routes = [
   {
@@ -46,6 +47,11 @@ const routes = [
     path: "/apps-collection/pagination",
     name: "Pagination",
     component: <Pagination/>
+  },
+  {
+    path: "/apps-collection/infinite-scrolling",
+    name: "Infinite Scrolling",
+    component: <InfiniteScrolling/>
   }
 ]
 

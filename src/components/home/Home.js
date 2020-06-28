@@ -69,6 +69,18 @@ const Home = () => {
                     </ul>
                 </div>
 
+                <div className='app'>
+                    <Link to='/apps-collection/infinite-scrolling'>
+                        <h2>Infinite Scrolling | Book Finder</h2>
+                    </Link>
+                    <ul>
+                        <li>Custom Hook</li>
+                        <li><code>useRef() | useCallback()</code></li>
+                        <li><code>axios</code></li>
+
+                    </ul>
+                </div>
+
             </div>
         </div>
     )
