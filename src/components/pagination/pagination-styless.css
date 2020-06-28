@@ -1,0 +1,47 @@
+header {
+    border-bottom-color: orange;
+}
+
+/*-------POSTS-------------*/
+.posts-container {
+    margin: 25px 0;
+    /* background-color: orangered; */
+    list-style: none;
+}
+
+.posts-container li {
+    padding: 5px;
+    border: 1px solid gray;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+
+
+/*-------PAGES-------------*/
+
+.pages-container {
+    /* background-color: orange; */
+}
+
+.pages-container ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+}
+.pages-container ul li{
+    padding: 3px 6px;
+    border: 1px solid #3f3f3f;
+    cursor: pointer;
+}
+.pages-container ul li:hover{
+    background-color: white;
+}
+
+.pages-container ul li a {
+    text-decoration: none;
+}
+.pages-container ul li a:hover {
+    text-decoration: underline;
+}

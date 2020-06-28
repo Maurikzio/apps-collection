@@ -8,6 +8,7 @@ import Todo from './components/basicTodo/Todo';
 import Timer from './components/pomodoroTimer/Timer';
 import Main from './components/chart/Main';
 import SumAll from './components/sumAllNumbers/SumAll';
+import Pagination from './components/pagination/Pagination';
 
 const routes = [
   {
@@ -40,6 +41,11 @@ const routes = [
     path: "/apps-collection/sum-all",
     name: "Sum all Numbers",
     component: <SumAll/>
+  },
+  {
+    path: "/apps-collection/pagination",
+    name: "Pagination",
+    component: <Pagination/>
   }
 ]
 

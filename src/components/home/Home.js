@@ -58,6 +58,17 @@ const Home = () => {
                     </ul>
                 </div>
 
+                <div className='app'>
+                    <Link to='/apps-collection/pagination'>
+                        <h2>Pagination</h2>
+                    </Link>
+                    <ul>
+                        <li>data from jsonplaceholder</li>
+                        <li>axios</li>
+                        <li>functional component</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     )
