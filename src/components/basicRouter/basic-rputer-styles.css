@@ -1,0 +1,52 @@
+header {
+    margin-bottom: 20px;
+    border-bottom-color: red;
+}
+
+.post-header{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.user-posts {
+    margin: 10px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.post-title, .post-body {
+    text-align: left;
+}
+
+.post-title {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.loading{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-text {
+    font-size: 40px;
+}
+
+.to-back{
+    background-color: transparent;
+    font-weight: 800;
+    margin: 0;
+    color: black;
+    border: 1px solid transparent;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+}
+.to-back:hover{
+    border: 1px solid grey;
+}
+.to-back::before{
+    content: '<';
+    margin-right: 5px;
+}

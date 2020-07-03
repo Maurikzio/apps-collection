@@ -80,6 +80,14 @@ const Home = () => {
 
                     </ul>
                 </div>
+                <div className='app'>
+                    <Link to='/apps-collection/basic-router'>
+                        <h2>Basic Router | Authors and Posts</h2>
+                    </Link>
+                    <ul>
+                        <li>Custom Hook</li>
+                    </ul>
+                </div>
 
             </div>
         </div>

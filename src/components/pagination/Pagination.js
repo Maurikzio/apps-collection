@@ -21,7 +21,7 @@ const Pagination = () => {
         setPosts(res.data)
         setLoading(false);
     }
-    fetchPosts()
+        fetchPosts()
   }, [])
 
   //get current post
