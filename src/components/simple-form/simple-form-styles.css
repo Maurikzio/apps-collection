@@ -4,7 +4,7 @@ header {
 
 
 .form-wrapper {
-    width: 500px;
+    width: 400px;
     height: 400px;
     margin: 100px auto;
     background-color: white;
@@ -22,4 +22,12 @@ header {
 
 .form-wrapper form {
     
+}
+.error {
+    border: 1px solid red;
+}
+
+.simple-form-btn {
+    width: 100%;
+    margin: 10px 0;
 }
