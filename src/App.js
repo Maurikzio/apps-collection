@@ -11,6 +11,7 @@ import SumAll from './components/sumAllNumbers/SumAll';
 import Pagination from './components/pagination/Pagination';
 import InfiniteScrolling from './components/infiniteScrolling/InfiniteScrolling';
 import BasicRouter from './components/basicRouter/BasicRouter';
+import SimpleForm from './components/simple-form/SimpleForm';
 
 const routes = [
   {
@@ -66,6 +67,12 @@ const routes = [
     name: "Basic Router",
     // exact: true,
     component: <BasicRouter/>
+  },
+  {
+    path: "/apps-collection/simple-form",
+    name: "Simple Form",
+    // exact: true,
+    component: <SimpleForm/>
   }
 ]
 

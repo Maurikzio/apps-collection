@@ -39,6 +39,7 @@ export default function InfiniteScrolling () {
                 type='text'
                 onChange={handleSearch}
                 placeholder='Enter a book name'
+                className='book-finder'
             />
             {
                 books.map((book, index) => {

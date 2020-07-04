@@ -236,6 +236,7 @@ const FAQ = () => {
                     placeholder='Search question'
                     onChange={findQuestionHandler}
                     autoFocus={true}
+                    className='search'
                 />
             </div>
             

@@ -9,7 +9,7 @@
     border: 1px solid grey;
     border-radius: 8px;
 }
-input {
+.book-finder {
     width: 400px;
     margin: 15px auto;
     font-size: 25px;
@@ -19,7 +19,7 @@ input {
     text-align: center;
 }
 
-input:focus{
+.book-finder:focus{
     outline: none;
 }
 
