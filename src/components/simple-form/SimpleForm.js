@@ -5,7 +5,7 @@ import img from './indian.png'
 
 const SimpleForm = () => {
     const [ info, setInfo ] = useState({firstName: '', lastName: '', email: '', phone: ''})
-    const [ errors, setErrors ] = useState({firstName: false, lastName: false})
+    const [ errors, setErrors ] = useState({})
 
     const handleOnChange = e => {
         const { target: { value, name } } = e;
@@ -18,6 +18,8 @@ const SimpleForm = () => {
         e.preventDefault();
         const { firstName, lastName, email, phone} = info;
 
+        //aunque al dar clic me mostrara false en consola, el estado ya habra cambiado
+        //y si hay errores, estaran en TRUE, y por ende ya tendran border: red;
         setErrors({
             ...errors, firstName: firstName === '', lastName: lastName === '',
         })
@@ -29,7 +31,14 @@ const SimpleForm = () => {
             phone
         }
         // console.log(data);
-        console.log(errors);
+        // console.log(errors);
+    }
+
+    const handleOnFocus = (e) => {
+        const { target: { name } } = e;
+        setErrors({
+            ...errors, [name]: false
+        })
     }
 
     return(
@@ -39,51 +48,54 @@ const SimpleForm = () => {
             </header>
             <div className='form-wrapper'>
                 <img src={img} className='image'/>
-                <form autoComplete='off' onSubmit={handleOnSubmit}>
+                <form autoComplete='off' onSubmit={handleOnSubmit} className='simple-form'>
                     <div className='first-name'>
-                        <p><strong>First name:</strong></p>
-                        <p>
+                        <p className='simple-form-input-title'><strong>First name:</strong></p>
+                        <div className='simple-form-input-wrapper'>
                             <input
                                 name='firstName'
                                 type='text'
                                 value={info.firstName}
                                 onChange={handleOnChange}
-                                className={errors.firstName ? 'error' : ''}
+                                className={`form-input ${errors.firstName ? ' error' : ''}`}
+                                onFocus={handleOnFocus}
                             />
-                        </p>    
+                            {errors.firstName && (<p className='simple-input-error-message'>Required field</p>)}
+                        </div>
                     </div>
                     <div className='last-name'>
-                        <p><strong>Last name:</strong></p>
-                        <p>
+                        <p className='simple-form-input-title'><strong>Last name:</strong></p>
+                        <div className='simple-form-input-wrapper'>
                             <input
                                 name='lastName'
                                 type='text'
                                 value={info.lastName}
                                 onChange={handleOnChange}
+                                className={`form-input ${errors.lastName ? ' error' : ''}`}
+                                onFocus={handleOnFocus}
                             />
-                        </p>    
+                            {errors.lastName && (<p className='simple-input-error-message'>Required field</p>)}
+                        </div>
                     </div>
                     <div className='email'>
-                        <p><strong>Email:</strong></p>
-                        <p>
+                        <p className='simple-form-input-title'><strong>Email:</strong></p>
                             <input
                                 name='email'
                                 type='emails'
                                 value={info.email}
                                 onChange={handleOnChange}
+                                className='form-input'
                             />
-                        </p>    
                     </div>
                     <div className='phone'>
-                        <p><strong>Phone:</strong></p>
-                        <p>
+                        <p className='simple-form-input-title'><strong>Phone:</strong></p>
                             <input
                                 name='phone'
                                 type='tel'
                                 value={info.phone}
                                 onChange={handleOnChange}
+                                className='form-input'
                             />
-                        </p>    
                     </div>
                     <button className='simple-form-btn'>Send Information</button>
                 </form>

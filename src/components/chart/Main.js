@@ -37,7 +37,7 @@ class Main extends Component{
                 </header>
                 <section>
                     <Chart columns={this.columns} chartType={this.state.chartType}/>
-                    <p>
+                    <p className='chart-btns'>
                         Chart Type
                         <button className='btn-chart' onClick={this.setBarChart}>Bar</button>
                         <button className='btn-chart' onClick={this.setLineChart}>Line</button>

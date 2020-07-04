@@ -85,7 +85,18 @@ const Home = () => {
                         <h2>Basic Router | Authors and Posts</h2>
                     </Link>
                     <ul>
-                        <li>Custom Hook</li>
+                        <li>react-router</li>
+                        <li>nesting routes</li>
+                    </ul>
+                </div>
+                <div className='app'>
+                    <Link to='/apps-collection/simple-form'>
+                        <h2>Simple Form</h2>
+                    </Link>
+                    <ul>
+                        <li>Basic validation</li>
+                        <li>Error messages</li>
+                        <li>Handle events</li>
                     </ul>
                 </div>
 

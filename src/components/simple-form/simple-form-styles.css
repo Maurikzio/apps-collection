@@ -5,11 +5,20 @@ header {
 
 .form-wrapper {
     width: 400px;
-    height: 400px;
+    /* height: 420px; */
     margin: 100px auto;
     background-color: white;
-    box-shadow: 0px 0px 15px gray;
+    box-shadow: 0px 0px 15px rgb(150, 200, 239);
     position: relative;
+    padding: 20px 40px;
+    display: flex;
+}
+
+.simple-form{
+    /* background-color: orange;  */
+    width: 100%;  
+    display: flex;
+    flex-direction: column; 
 }
 
 .image {
@@ -20,14 +29,67 @@ header {
     /* background-color: pink; */
 }
 
-.form-wrapper form {
+.form-input {
+    height: 50px;
+    font-size: 20px;
+    width: 100%;
+}
+.form-input:focus {
+    outline: none !important;
     
 }
 .error {
     border: 1px solid red;
+    position: relative;
+    left: 0px;
+    animation-name: wrong-input;
 }
+
 
 .simple-form-btn {
     width: 100%;
+    height: 40px;
+    /* margin-top: auto; MOVES TO the BOTTOM */
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: rgba(87, 229, 208, 1);
+    border: none;
+}
+.simple-form-btn:hover {
+    cursor: pointer;
+    background: rgba(87, 229, 208, .8);
+}
+
+.simple-form-btn:focus {
+    outline: none;
+}
+
+.first-name, .last-name, .email, .phone{
+    display: flex;
+    flex-direction: column;
     margin: 10px 0;
+}
+
+.first-name {
+    width: 100%;
+}
+
+
+.simple-form-input-title{
+    text-align: left;
+    padding: 5px 0;
+}
+
+.simple-form-input-wrapper{
+    position: relative;
+}
+
+.simple-input-error-message{
+    position: absolute;
+    bottom: -6px;
+    left: calc(50% - 50px);
+    color: red;
+    background-color: white;
+    font-size: 13px;
 }
