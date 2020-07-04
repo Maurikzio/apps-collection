@@ -112,11 +112,11 @@ class Timer extends Component {
                 </div>
 
                 <div className='types'>
-                    <button className='start' onClick={this.setTimeForWork}>Start Working!</button>
+                    <button className='btn start' onClick={this.setTimeForWork}>Start Working!</button>
                 
-                    <button className='short' onClick={this.setTimeForShortBreak}>Short break!</button>
+                    <button className='btn short' onClick={this.setTimeForShortBreak}>Short break!</button>
 
-                    <button className='long' onClick={this.setTimeForLongBreak}>longBreak!</button>
+                    <button className='btn long' onClick={this.setTimeForLongBreak}>longBreak!</button>
                 </div>
 
             </div>

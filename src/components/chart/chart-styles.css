@@ -1,7 +1,7 @@
 p {
     text-align: center;
 }
-button {
+.btn-chart {
     background: #159fff;
     border: none;
     color: white;
@@ -9,7 +9,7 @@ button {
     padding: 0.5em 2em;
     text-transform: uppercase;
 }
-button:hover{
+.btn-chart:hover{
     cursor: pointer;
     background: darken(#159fff, 50%);
 }
