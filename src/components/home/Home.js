@@ -99,7 +99,17 @@ const Home = () => {
                         <li>Handle events</li>
                     </ul>
                 </div>
-
+                <div className='app'>
+                    <Link to='/apps-collection/voting-app'>
+                        <h2>Voting App</h2>
+                    </Link>
+                    <ul>
+                        <li>Event Propagation</li>
+                        <li>Inmuttability</li>
+                        <li>State setting and update</li>
+                        <li>Property Initializers</li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

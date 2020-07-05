@@ -12,6 +12,7 @@ import Pagination from './components/pagination/Pagination';
 import InfiniteScrolling from './components/infiniteScrolling/InfiniteScrolling';
 import BasicRouter from './components/basicRouter/BasicRouter';
 import SimpleForm from './components/simple-form/SimpleForm';
+import ProductsList from './components/votingApp/ProductsList';
 
 const routes = [
   {
@@ -73,6 +74,12 @@ const routes = [
     name: "Simple Form",
     // exact: true,
     component: <SimpleForm/>
+  },
+  {
+    path: "/apps-collection/voting-app",
+    name: "Voting App",
+    // exact: true,
+    component: <ProductsList/>
   }
 ]
 

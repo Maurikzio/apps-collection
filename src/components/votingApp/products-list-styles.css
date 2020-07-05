@@ -1,0 +1,14 @@
+header {
+    border-bottom-color: rgb(81, 139, 202);
+}
+.products-list{
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.subtitle {
+    /* background-color: orangered; */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
